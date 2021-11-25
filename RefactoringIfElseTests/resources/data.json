@@ -1,0 +1,17 @@
+[
+  {
+    "type": "book",
+    "filter": "/tolkien/books",
+    "value": "LOTR"
+  },
+  {
+    "type": "song",
+    "filter": "/foofighters/songs",
+    "value": "The pretender"
+  },
+  {
+    "type": "movie",
+    "filter": "/tarantino/movies",
+    "value": "Kill Bill"
+  }
+]

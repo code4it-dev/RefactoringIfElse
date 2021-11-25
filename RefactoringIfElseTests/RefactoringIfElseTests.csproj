@@ -18,4 +18,10 @@
     <ProjectReference Include="..\RefactoringIfElse\RefactoringIfElse.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="resources\data.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
