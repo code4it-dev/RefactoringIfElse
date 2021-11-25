@@ -1,4 +1,4 @@
-﻿namespace RefactoringIfElse.Concrete
+﻿namespace RefactoringIfElse.Concrete.DataDriven
 {
     public interface IHandlerFactory
     {

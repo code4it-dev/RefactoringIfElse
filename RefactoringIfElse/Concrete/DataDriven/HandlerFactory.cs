@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using System.Collections.Generic;
 
-namespace RefactoringIfElse.Concrete
+namespace RefactoringIfElse.Concrete.DataDriven
 {
     public class HandlerFactory : IHandlerFactory
     {

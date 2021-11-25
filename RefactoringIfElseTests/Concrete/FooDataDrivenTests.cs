@@ -1,4 +1,4 @@
-﻿using RefactoringIfElse.Concrete;
+﻿using RefactoringIfElse.Concrete.DataDriven;
 
 namespace RefactoringIfElseTests.Concrete
 {
