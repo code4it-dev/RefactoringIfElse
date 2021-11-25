@@ -11,12 +11,11 @@ namespace RefactoringIfElseTests.Concrete
 
         public override void Setup()
         {
-            sut = new FooWithFactory(_mockDbRepo.Object, _mockApiAccess.Object, new Strategy(new IFactory[]
+            sut = new FooWithFactory(new Strategy(new IFactory[]
             {
                 new TarantinoProviderFactory(_mockApiAccess.Object),
                 new TolkienProviderFactory(_mockApiAccess.Object, _mockDbRepo.Object),
-                new FoofightersProviderFactory(_mockApiAccess.Object, _mockDbRepo.Object)
-                
+                new FoofightersProviderFactory(_mockApiAccess.Object, _mockDbRepo.Object)                
             }));
         }
     }

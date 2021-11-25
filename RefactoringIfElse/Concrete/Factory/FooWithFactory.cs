@@ -6,7 +6,7 @@ namespace RefactoringIfElse.Concrete.Factory
     {
         private IStrategy _strategy;
         
-        public FooWithFactory(IDbRepository dbRepository, IApiAccess apiAccess, IStrategy strategy) : base(dbRepository, apiAccess)
+        public FooWithFactory(IStrategy strategy)
         {
             _strategy = strategy;
         }

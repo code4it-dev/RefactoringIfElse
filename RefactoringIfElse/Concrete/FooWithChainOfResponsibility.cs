@@ -2,9 +2,13 @@ namespace RefactoringIfElse.Concrete
 {
     public class FooWithChainOfResponsibility : BaseFoo
     {
+        private readonly IDbRepository _dbRepository;
+        private readonly IApiAccess _apiAccess;
+
         public FooWithChainOfResponsibility(IDbRepository dbRepository, IApiAccess apiAccess) 
-            : base(dbRepository, apiAccess)
         {
+            _dbRepository = dbRepository;
+            _apiAccess = apiAccess;
         }
 
         public override string DoSomething(string path)

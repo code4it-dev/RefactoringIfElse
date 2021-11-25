@@ -2,8 +2,13 @@
 {
     public class FooWithIfElse : BaseFoo
     {
-        public FooWithIfElse(IDbRepository dbRepository, IApiAccess apiAccess) : base(dbRepository, apiAccess)
+        private readonly IDbRepository _dbRepository;
+        private readonly IApiAccess _apiAccess;
+
+        public FooWithIfElse(IDbRepository dbRepository, IApiAccess apiAccess)
         {
+            _dbRepository = dbRepository;
+            _apiAccess = apiAccess;
         }
 
         public override string DoSomething(string path)
